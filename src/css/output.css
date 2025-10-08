@@ -349,6 +349,9 @@
   .h-full {
     height: 100%;
   }
+  .w-\[0\%\] {
+    width: 0%;
+  }
   .w-\[2px\] {
     width: 2px;
   }
@@ -715,6 +718,16 @@
   .sm\:left-\[30px\] {
     @media (width >= 40rem) {
       left: 30px;
+    }
+  }
+  .sm\:left-\[50\%\] {
+    @media (width >= 40rem) {
+      left: 50%;
+    }
+  }
+  .sm\:left-\[50\] {
+    @media (width >= 40rem) {
+      left: 50;
     }
   }
   .sm\:mx-\[100px\] {

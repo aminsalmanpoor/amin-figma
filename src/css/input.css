@@ -1,4 +1,10 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
 @font-face {
   font-family: IranYekan;
   src: url(../font/iranyekanwebregular.woff2);
@@ -29,63 +35,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 80%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 16px;
-  }
-}
-.takhfif-center-1-2 {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .swiper {
-    width: 80% !important;
-    height: 80%;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff7f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 80%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 16px;
-  }
-}
-.takhfif-center-3-2 {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .swiper {
-    width: 80% !important;
-    height: 80%;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #f4faff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
   }
 
   .swiper-slide img {

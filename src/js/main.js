@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -7,7 +11,7 @@ import { Navigation, Pagination } from "swiper/modules";
 
 const swiper = new Swiper(".mySwiper", {
   modules: [Navigation, Pagination],
-  slidesPerView: 3,
+  slidesPerView: 10,
   spaceBetween: 0,
   loop: true,
   pagination: {

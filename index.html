@@ -343,29 +343,39 @@
           </h1>
         </div>
         <div class="takhfif-center">
-          <div class="swiper mySwiper">
+          <div class="swiper mySwiper w-full h-64">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./src/img/takhfif1/card product.png" alt="" />
+              <div
+                class="swiper-slide bg-blue-500 flex items-center justify-center text-white"
+              >
+                <img src="./src/img/takhfif1/img1.png" alt="">
               </div>
-              <div class="swiper-slide">
-                <img src="./src/img/takhfif1/card product (1).png" alt="" />
+              <div
+                class="swiper-slide bg-red-500 flex items-center justify-center text-white"
+              >
+               <img src="./src/img/takhfif1/img1.png" alt="">
               </div>
-              <div class="swiper-slide">
-                <img src="./src/img/takhfif1/card product (2).png" alt="" />
+              <div
+                class="swiper-slide bg-green-500 flex items-center justify-center text-white"
+              >
+                <img src="./src/img/takhfif1/img1.png" alt="">
               </div>
-              <div class="swiper-slide">
-                <img src="./src/img/takhfif1/card product.png" alt="" />
+              <div
+                class="swiper-slide bg-green-500 flex items-center justify-center text-white"
+              >
+                <img src="./src/img/takhfif1/img1.png" alt="">
               </div>
-              <div class="swiper-slide">
-                <img src="./src/img/takhfif1/card product (1).png" alt="" />
+              <div
+                class="swiper-slide bg-green-500 flex items-center justify-center text-white"
+              >
+                <img src="./src/img/takhfif1/img1.png" alt="">
               </div>
-              <div class="swiper-slide">
-                <img src="./src/img/takhfif1/card product (2).png" alt="" />
+              <div
+                class="swiper-slide bg-green-500 flex items-center justify-center text-white"
+              >
+                <img src="./src/img/takhfif1/img1.png" alt="">
               </div>
             </div>
-
-            <!-- Buttons -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
@@ -380,7 +390,7 @@
         >
           جدید ترین کفش های ورزشی
         </h1>
-        <div class="takhfif-center-1-2 ">
+        <div class="takhfif-center-1-2">
           <div class="swiper mySwiper-shoe">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -661,35 +671,37 @@
       <!-- #endregion footer-->
     </div>
     <!-- #endregion wrapper-->
-    <script type="module" src="./src/js/main.js"></script>
+    
+    <script type="module">
+      import Swiper from "swiper";
+      import "swiper/css";
+      import "swiper/css/navigation";
+      import "swiper/css/pagination";
 
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 0,
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-      });
-    </script>
-     <script>
-      var swiper = new Swiper(".mySwiper-shoe", {
-        slidesPerView: 3,
-        spaceBetween: 0,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-     <script>
-      var swiper = new Swiper(".mySwiper-lala", {
-        slidesPerView: 3,
-        spaceBetween: 0,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+        breakpoints: {
+          0: {
+            // mobil
+            slidesPerView: 2,
+          },
+          640: {
+            // tablet
+            slidesPerView: 3,
+          },
+          1024: {
+            // descktop
+            slidesPerView: 3,
+          },
         },
       });
     </script>

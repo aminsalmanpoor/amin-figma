@@ -1,11 +1,668 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🏓 FitLand - Sports Equipment Store</title>
+    <link rel="shortcut icon" href="./src/img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/css/output.css" />
+  </head>
+  <body>
+    <!-- #region wrapper-->
+    <div class="wrapper">
+      <!-- #region header-->
+
+      <div class="header w-[100%] h-[237px]">
+        <div
+          class="header-top w-[100%] h-[40px] bg-[#032340] flex items-center justify-center"
+        >
+          <p
+            class="font-IranYekan text-[#FFFFFF] sm:text-[14px] text-[10px] font-bold"
+          >
+            با عضویت در فیت لند اولین ارسال را مهمون ما باش :)
+          </p>
+        </div>
+        <div class="md:max-w-[1440px] max-w-[%100] mx-auto">
+          <div
+            class="header-center w-[100%] h-[100px] flex flex-col md:flex-row"
+          >
+            <div
+              class="center-right md:w-[30%] w-[100%] h-[100%] min-w-[150px] mt-[20px] mx-auto box-border"
+            >
+              <div
+                class="logo flex md:center justify-between w-full md:mx-0 px-[20px]"
+              >
+                <img
+                  src="./src/img/header/img1.png"
+                  alt=""
+                  class="sm:w-[150px] w-[100px] sm:h-[32px]"
+                />
+                <img
+                  src="./src/img/header/menu.png"
+                  alt=""
+                  class="md:hidden block"
+                />
+              </div>
+              <div class="md:block hidden">
+                <p
+                  class="font-IranYekan lg:text-[12px] text-[10px] text-[#868686] text-bold p-3"
+                >
+                  فروشگاه لوازم ورزشی فیت‌لند
+                </p>
+              </div>
+            </div>
+            <div
+              class="center-center w-[100%] h-[100%] flex items-center justify-center relative sm:px-[50px]"
+            >
+              <div
+                class="relative w-[100%] md:max-w-[638px] max-w-[100%] md:mt-0 mt-[30px]"
+              >
+                <input
+                  type="text"
+                  class="sm:h-[48px] h-[30px] w-[100%] bg-[#F9F9F9] border-[#CBCBCB] pr-[50px] border-[1px] rounded-[16px] border: outline-0 focus:placeholder-transparent placeholder:outline-none max-sm:placeholder:text-[10px]"
+                  placeholder="جستجو"
+                />
+                <img
+                  src="./src/img/header/search-normal.png"
+                  alt=""
+                  class="absolute bottom-[50%] right-[15px] translate-y-[50%]"
+                />
+              </div>
+            </div>
+            <div
+              class="center-left pl-[10px] w-[40%] h-[100%] md:flex items-center justify-center hidden"
+            >
+              <div
+                class="user w-[100%] h-[48px] flex text-[16px] items-center justify-end"
+              >
+                <a
+                  href="./login.html"
+                  class="h-[48px] bg-white shadow-slate-400 shadow-2xl flex items-center justify-center lg:text-[14px] text-[10px] font-IranYekan font-bold gap-x-2"
+                >
+                  ثبت نام
+                  <span class="inline-block w-[2px] h-[15px] bg-black"></span>
+                  ورود
+                  <img
+                    class="w-[20px] h-[20px]"
+                    src="./src/img/header/user.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <img
+                class="w-[40px] h-[40px] mr-[10px]"
+                src="./src/img/header/sabad.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="menu w-[80%] h-[64px] mx-auto mt-[30px] bg-[#F9F9F9] rounded-[16px] md:flex hidden"
+          >
+            <div
+              class="menu-right md:w-[45%] h-[100%] flex items-center justify-evenly"
+            >
+              <a
+                href="#"
+                class="font-IranYekan lg:text-[16px] text-[10px] font-bold"
+                >مردانه</a
+              >
+              <a
+                href="#"
+                class="font-IranYekan lg:text-[16px] text-[10px] font-bold"
+                >زنانه</a
+              >
+              <a
+                href="#"
+                class="font-IranYekan lg:text-[16px] text-[10px] font-bold"
+                >بچگانه</a
+              >
+              <a
+                href="#"
+                class="font-IranYekan lg:text-[16px] text-[10px] font-bold"
+                >لوازم ورزشی</a
+              >
+              <a
+                href="#"
+                class="font-IranYekan lg:text-[16px] text-[10px] font-bold"
+                >شیکر و جاک</a
+              >
+            </div>
+            <div class="menu-center w-[10%]"></div>
+            <div
+              class="menu-left w-[45%] h-[100%] flex items-center justify-evenly"
+            >
+              <a
+                href="#"
+                class="font-IranYekan lg:text-[16px] text-[10px] font-bold flex"
+              >
+                <img
+                  src="./src/img/header/star.png"
+                  alt=""
+                  class="w-[18px] h-[18px]"
+                />
+                جدیدترین محصولات
+              </a>
+              <a
+                href="#"
+                class="font-IranYekan lg:text-[16px] text-[10px] font-bold flex"
+              >
+                <img
+                  src="./src/img/header/flash.png"
+                  alt=""
+                  class="w-[18px] h-[18px]"
+                />
+                تخفیفات ویزه
+              </a>
+              <a
+                href="#"
+                class="font-IranYekan lg:text-[16px] text-[10px] font-bold flex"
+              >
+                <img
+                  src="./src/img/header/award.png"
+                  alt=""
+                  class="w-[18px] h-[18px]"
+                />
+                پرفروش ترین ها
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion header-->
+      <!-- #region center-->
+      <div class="w-full">
+        <div
+          class="center flex w-[80%] md:h-[375px] justify-center md:mx-auto md:mt-[50px] md:relative"
+        >
+          <div
+            class="flex justify-evenly md:w-[75%] w-full h-full md:mx-[30px] sm:mx-[100px] mx-[20px]"
+          >
+            <div class="center-right md:w-[50%] sm:w-[80%] h-[100%]">
+              <p
+                class="text-gray-600 xl:text-[18px] lg:text-[16px] sm:text-[12px] text-[10px] font-bold font-IranYekan md:my-[10px]"
+              >
+                راحت و مطمئن خرید کنید!
+              </p>
+              <h2
+                class="xl:text-[35px] lg:text-[20px] sm:text-[14px] text-[12px] font-bold text-gray-800 font-IranYekan"
+              >
+                همراه تو در مسیر سلامتی
+              </h2>
+              <p
+                class="font-IranYekan xl:text-[35px] lg:text-[20px] sm:text-[14px] text-[12px] font-bold text-[#FA541C] md:leading-[50px] my-[10px]"
+              >
+                سهم بزرگ خودتان را امروز بگیرید!
+              </p>
+              <p
+                class="font-IranYekan text-gray-600 xl:text-[18px] lg:text-[16px] sm:text-[12px] text-[10px] font-bold md:my-[20px]"
+              >
+                بهترین طرح فصل فیت‌لند، همین حالا شروع کن و محصولات ما رو با
+                تخفیف ویژه امتحان بگیر!
+              </p>
+              <button
+                class="bg-[#032340] text-white md:w-[150px] mt-[20px] h-[40px] px-6 py-3 rounded-lg"
+              >
+                <p class="font-IranYekan md:text-[12px] text-[10px]">
+                  مشاهده محصولات
+                </p>
+              </button>
+            </div>
+
+            <div class="center-center w-[50%] md:mx-auto flex items-center">
+              <img
+                src="./src/img/center/img1.png"
+                alt=""
+                class="w-[100%] absolute xl:-top-[50%] lg:-top-[30%] md:top-0 sm:top-[23%] lg:left-[25%] md:left-[20%] sm:left-[30px]"
+              />
+            </div>
+          </div>
+          <div class="center-left md:w-[25%] h-[100%] md:block hidden">
+            <div class="w-fit h-fit">
+              <div class="one flex items-center justify-evenly">
+                <img
+                  src="./src/img/center/img2.png"
+                  alt=""
+                  class="w-[70px] h-[70px]"
+                />
+                <div>
+                  <h3 class="text-[18px] font-yekanNumber font-bold">300+</h3>
+                  <p class="text-[18px] font-IranYekan">محصولات متنوع</p>
+                </div>
+              </div>
+              <div class="two flex items-center justify-evenly">
+                <img
+                  src="./src/img/center/img3.png"
+                  alt=""
+                  class="w-[70px] h-[70px]"
+                />
+                <div class="my-[20px]">
+                  <h3 class="text-[18px] font-yekanNumber font-bold">95%</h3>
+                  <p class="text-[18px] font-IranYekan">رضایت مشتری</p>
+                </div>
+              </div>
+              <div class="tree flex items-center justify-evenly">
+                <img
+                  src="./src/img/center/img4.png"
+                  alt=""
+                  class="w-[70px] h-[70px]"
+                />
+                <div>
+                  <h3 class="text-[18px] font-yekanNumber font-bold">4 روز</h3>
+                  <p class="text-[18px] font-IranYekan">از خرید تا دریافت</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- #endregion center -->
+      <!-- #region center-bottom-->
+      <div class="w-full  md:block hidden">
+        <div class="center-bottom w-[100%] h-[106px] flex justify-center">
+          <img src="./src/img/center/Frame 1430103320.png" alt="" />
+        </div>
+      </div>
+      <!-- #endregion -->
+      <!-- #region product-card-->
+      <div class="product-1 relative">
+        <div class="absolute inset-0 top-[50%] md:block hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#E7F1FE"
+              fill-opacity="1"
+              d="M0,0L48,26.7C96,53,192,107,288,112C384,117,480,75,576,58.7C672,43,768,53,864,74.7C960,96,1056,128,1152,122.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+        <div class="product w-[100%] flex items-center justify-evenly z-10">
+          <div
+            class="product-center w-[80%] flex justify-evenly z-20 md:my-[20px] mt-[50px]"
+          >
+            <div class="flex justify-evenly sm:w-[60%] w-full">
+              <div class="product-right">
+                <img src="./src/img/product-card/Variant3 (2).png" alt="" />
+              </div>
+              <div class="product-center">
+                <img src="./src/img/product-card/Variant3.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="product-left w-[30%] box-border justify-center items-end md:flex hidden"
+            >
+              <div class="w-[100%]">
+                <img src="./src/img/product-card/Frame 1430103309.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion product-card -->
+      <!-- #region baner-->
+      <div class="w-full flex justify-center mt-[50px] z-[10] lg:my-0 sm:my-0">
+        <div class="relative w-[100%] md:h-auto">
+          <img
+            src="./src/img/baner/img1.png"
+            alt=""
+            class="w-[100%] bg-cover"
+          />
+          <div
+            class="w-fit h-fit absolute xl:top-[50px] sm:top-[15%] top-[15%] xl:right-[270px] sm:right-[8%] right-[5%]"
+          >
+            <p
+              class="font-IranYekan lg:text-[18px] md:text-[16px] sm:text-[12px] text-[8px] text-[#01070D]"
+            >
+              برای حال خوب
+            </p>
+            <p
+              class="font-IranYekan sm:font-bold lg:text-[18px] md:text-[16px] sm:text-[12px] text-[8px] text-[#01070D] md:my-[20px]"
+            >
+              لوازم ایروبیک و تناسب اندام بگیر
+            </p>
+            <a href="#">
+              <img
+                src="./src/img/baner/botton.png"
+                alt=""
+                class="w-[236px] h-[48px] mt-[50px] md:block hidden"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion baner-->
+      <!-- #region takhfif-->
+      <div
+        class="takfif relative bg-[#FFF7F4] z-[30] md:w-[100%] 2xl:h-[650px] xl:h-[600px] lg:h-[470px] md:h-[390px] sm:h-[250px] box-border md:mt-[30px] "
+      >
+        <div>
+          <h1
+            class="font-IranYekan lg:text-[30px] md-text-[24px] sm:text-[18px] text-[10px] bg-white z-10 rounded-[8px] block text-center"
+          >
+            تخفیفات ویژه
+          </h1>
+        </div>
+        <div class="takhfif-center w-[80%] mt-[2%] mx-auto">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif1/card product.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif1/card product (1).png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif1/card product (2).png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif1/card product.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif1/card product (1).png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif1/card product (2).png" alt="" />
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="takfif md:w-[100%] lg:h-[672px] md:h-[300px] sm:h-[250px]">
+        <h1
+          class="font-IranYekan lg:text-[30px] md-text-[24px] sm:text-[18px] text-[10px] bg-white z-10 rounded-[8px] block text-center"
+        >
+          جدید ترین کفش های ورزشی
+        </h1>
+        <div class="takhfif-center w-[80%] mx-auto">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif1/card product (3).png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif1/card product (4).png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif1/card product (5).png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif1/card product (3).png " alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif1/card product (4).png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif1/card product (5).png" alt="" />
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion takhfif-->
+      <!-- #region bner2-->
+
+      <div class="w-full h-auto flex justify-center">
+        <div class="relative w-full h-full">
+          <img
+            src="./src/img/baner/img2.png"
+            alt=""
+            class="w-[100%] bg-cover"
+          />
+          <div
+            class="w-fit h-fit absolute xl:top-[50px] sm:top-[10%] top-[20%] xl:right-[270px] sm:right-[8%] right-[5%]"
+          >
+            <p
+              class="font-IranYekan font-bold lg:text-[18px] md:text-[16px] sm:text-[12px] text-[8px] text-[#01070D] md:my-[20px]"
+            >
+              برای لذت بردن از مسیر
+            </p>
+            <p
+              class="font-IranYekan font-bold lg:text-[18px] md:text-[16px] sm:text-[12px] text-[8px] text-[#01070D] md:my-[20px]"
+            >
+              دوچرخه، اسکیت و اسکوتر بگیر
+            </p>
+            <a href="#">
+              <img
+                src="./src/img/baner/botton.png"
+                alt=""
+                class="md:w-[236px] w-[120px] md:h-[48px] h-[30px] mt-0 md:block hidden"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion baner2-->
+      <!-- #region takhfif2-->
+      <div
+        class="takfif2 bg-[#F4FAFF] md:w-[100%] lg:h-[672px] md:h-[390px] sm:h-[250px] md:mt-[50px] box-border"
+      >
+        <div>
+          <h1
+            class="font-IranYekan lg:text-[30px] md-text-[24px] sm:text-[18px] text-[10px] bg-white z-10 rounded-[8px] block text-center"
+          >
+            تخفیفات ویژه
+          </h1>
+        </div>
+        <div class="takhfif-center w-[80%] mx-auto mt-[30px]">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif2/card product (6).png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif2/card product (7).png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif2/card product (8).png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif2/card product (6).png " alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif2/card product (7).png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/img/takhfif2/card product (8).png" alt="" />
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion takhfif2-->
+      <!-- #region product2-->
+      <div class="product-1 relative">
+        <div class="w-[100%] flex items-center justify-evenly z-10">
+          <div
+            class="product-center w-[80%] flex justify-evenly z-20 md:my-[20px] md:mt-[50px] my-[5px]"
+          >
+            <div class="flex justify-evenly md:w-[60%] w-[100%]">
+              <div class="product-right">
+                <img src="./src/img/pruduct2/img2 (2).png" alt="" class="w-" />
+              </div>
+              <div class="product-center">
+                <img src="./src/img/pruduct2/img2 (3).png" alt="" />
+              </div>
+            </div>
+
+            <div
+              class="product-left w-[30%] box-border justify-center items-end md:flex hidden"
+            >
+              <div class="w-[100%]">
+                <img src="./src/img/pruduct2/img3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion product2 -->
+      <!-- #region bner3-->
+
+      <div class="w-full h-auto flex justify-center lg:my-[150px]">
+        <div class="relative w-full h-full">
+          <img
+            src="./src/img/baner3/img3.png"
+            alt=""
+            class="w-[100%] bg-cover"
+          />
+          <div
+            class="w-fit h-[200px] absolute xl:top-[10%] sm:top-[15%] top-[15%] xl:right-[15%] sm:right-[15%] right-[15%]"
+          >
+            <p
+              class="font-IranYekan font-bold lg:text-[18px] md:text-[16px] sm:text-[12px] max-sm:text-[3px] text-[8px] text-[#FFFFFF] md:my-[20px]"
+            >
+              بزودی کامل ترین مجموعه از
+            </p>
+            <p
+              class="font-IranYekan font-bold lg:text-[18px] md:text-[16px] sm:text-[12px] max-sm:text-[3px] text-[8px] text-[#FFFFFF] md:my-[20px]"
+            >
+              لوازم کمپ در فیت لند
+            </p>
+            <p
+              class="font-IranYekan lg:text-[18px] md:text-[16px] sm:text-[12px] max-sm:text-[3px] text-[8px] text-[#FFFFFF] md:my-[20px]"
+            >
+              از سفر لذت ببر
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion baner3-->
+      <!-- #region news-->
+      <div class="news w-full flex items-center justify-center">
+        <div class="news-center w-[80%] h-fit flex items-center justify-evenly">
+          <div
+            class="news-center-right border-[1px] border-[#CBCBCB] h-[500px] rounded-[16px] box-border overflow-hidden md:w-[564px] w-[100%]"
+          >
+            <img
+              src="./src/img/news/img1.png"
+              alt=""
+              class="block w-[564px] h-[307px]"
+            />
+            <div class="ml-[20px] mr-[10px] box-border">
+              <h2 class="text-[24px] font-IranYekan py-[20px]">
+                افزایش دریافتی فوتبالیست ها و معافیت از سربازی
+              </h2>
+              <h3 class="text-[14px] font-IranYekan">
+                خبرها حاکی از آن است که رییس فدراسیون فوتبال اعلام کرد در فصل
+                جاری قرار داد هر بازیکن فوتبال 50 درصد افزایش پیدا میکند همچنین
+                وی گفت...
+              </h3>
+            </div>
+            <div
+              class="bg-[#FA541C] w-[153px] h-[40px] md:my-[20px] flex items-center justify-center rounded-[8px] box-border"
+            >
+              <img src="./src/img/news/arrow-left.png" alt="" />
+              <p class="text-[#FFFFFF] font-IranYekan text-[14px] pr-[5px]">
+                مشاهده خبر
+              </p>
+            </div>
+          </div>
+          <div
+            class="news-center-lft border-[1px] border-[#CBCBCB] w-[564px] h-[500px] rounded-[16px] box-border overflow-hidden md:block hidden"
+          >
+            <img
+              src="./src/img/news/img2.png"
+              alt=""
+              class="block w-[564px] h-[307px]"
+            />
+            <div class="ml-[20px] mr-[10px] box-border">
+              <h2 class="text-[22px] font-IranYekan py-[20px]">
+                شکست استرالیا در گام نخست جام جهانی فوتبال زنان!
+              </h2>
+              <h3 class="text-[14px] font-IranYekan">
+                تیم‌ها در روز اول مسابقات جام جهانی فوتبال زنان در شهر مادرید
+                اسپانیا با یکدیگر به رقابت پرداختند.
+              </h3>
+            </div>
+            <div
+              class="bg-[#FA541C] w-[153px] h-[40px] my-[20px] flex items-center justify-center rounded-[8px] mx-[10px]"
+            >
+              <img src="./src/img/news/arrow-left.png" alt="" />
+              <p class="text-[#FFFFFF] font-IranYekan text-[14px] pr-[5px]">
+                مشاهده خبر
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- #endregion news-->
+      <!-- #region baner4-->
+      <div
+        class="baner4 bg-[#F4FAFF] w-full md:h-[240px] h-[300px] md:flex justify-center items-center my-[37px]"
+      >
+        <div
+          class="baner4-center md:w-[80%] w-[70%] h-full md:flex justify-center items-center block mx-auto pt-[30px]"
+        >
+          <div
+            class="baner-right w-[50%] flex items-center justify-evenly"
+          >
+            <div class="baner4-1 flex md:my-[40px] justify-evenly">
+              <div
+                class="bg-white w-[147px] h-[152px] rounded-[16px] justify-items-center py-[20px] box-border"
+              >
+                <img src="./src/img/baner4/img2.png" alt="" />
+                <p class="text-[14px] font-IranYekan font-bold text-[#032340]">
+                  ارسال سریع
+                </p>
+              </div>
+            </div>
+            <div class="baner4-2 flex md:my-[40px] justify-evenly">
+              <div
+                class="bg-white w-[147px] h-[152px] rounded-[16px] justify-items-center py-[20px] box-border"
+              >
+                <img src="./src/img/baner4/img1.png" alt="" />
+                <p class="text-[14px] font-IranYekan font-bold text-[#032340]">
+                  پرداخت قسطی
+                </p>
+              </div>
+            </div>
+            <div class="baner4-2 flex justify-evenly">
+              <div
+                class="bg-white w-[147px] h-[152px] rounded-[16px] justify-items-center md:py-[20px] box-border"
+              >
+                <img src="./src/img/baner4/home.png" alt="" />
+                <p
+                  class="text-[14px] font-IranYekan font-bold text-[#032340] pt-[20px]"
+                >
+                  پرداخت درب منزل
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="baner4-left md:w-[25%] w-full flex items-center justify-center mt-[30px]"
+          >
+            <div class="w-fit h-fit flex justify-center items-center">
+              <p class="text-[#032340] text-[22px] font-IranYekan">
+                با بیش از ده سال سابقه فروش لوازم ورزشی و لباس های ورزشی
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion baner4-->
+        <!-- #region footer-->
+      <div class="footer w-full">
+        <img src="./src/img/baner4/Footer.png" alt="" class="w-full" />
+      </div>
+      <!-- #endregion footer-->
+    
+
+    </div>
+    <!-- #endregion wrapper-->
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
 </html>

@@ -259,7 +259,7 @@
 
       <!-- #endregion center -->
       <!-- #region center-bottom-->
-      <div class="w-full  md:block hidden">
+      <div class="w-full md:block hidden">
         <div class="center-bottom w-[100%] h-[106px] flex justify-center">
           <img src="./src/img/center/Frame 1430103320.png" alt="" />
         </div>
@@ -333,7 +333,7 @@
       <!-- #endregion baner-->
       <!-- #region takhfif-->
       <div
-        class="takfif relative bg-[#FFF7F4] z-[30] md:w-[100%] 2xl:h-[650px] xl:h-[600px] lg:h-[470px] md:h-[390px] sm:h-[250px] box-border md:mt-[30px] "
+        class="takfif relative bg-[#FFF7F4] z-[30] md:w-[100%] 2xl:h-[650px] xl:h-[600px] lg:h-[470px] md:h-[390px] sm:h-[250px] box-border md:mt-[30px]"
       >
         <div>
           <h1
@@ -342,7 +342,7 @@
             تخفیفات ویژه
           </h1>
         </div>
-        <div class="takhfif-center ">
+        <div class="takhfif-center">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -372,14 +372,16 @@
         </div>
       </div>
 
-      <div class="takfif-1-2 md:w-[100%] lg:h-[672px] md:h-[300px] sm:h-[250px]">
+      <div
+        class="takfif-1-2 md:w-[100%] lg:h-[672px] md:h-[300px] sm:h-[250px]"
+      >
         <h1
           class="font-IranYekan lg:text-[30px] md-text-[24px] sm:text-[18px] text-[10px] bg-white z-10 rounded-[8px] block text-center"
         >
           جدید ترین کفش های ورزشی
         </h1>
         <div class="takhfif-center-1-2 w-[80%] mx-auto">
-          <div class="swiper mySwiper">
+          <div class="swiper mySwiper-shoe">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="./src/img/takhfif1/card product (3).png" alt="" />
@@ -453,7 +455,7 @@
           </h1>
         </div>
         <div class="takhfif-center-3-2">
-          <div class="swiper mySwiper">
+          <div class="swiper mySwiper-lala">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="./src/img/takhfif2/card product (6).png" alt="" />
@@ -606,9 +608,7 @@
         <div
           class="baner4-center md:w-[80%] w-[70%] h-full md:flex justify-center items-center block mx-auto pt-[30px]"
         >
-          <div
-            class="baner-right w-[50%] flex items-center justify-evenly"
-          >
+          <div class="baner-right w-[50%] flex items-center justify-evenly">
             <div class="baner4-1 flex md:my-[40px] justify-evenly">
               <div
                 class="bg-white w-[147px] h-[152px] rounded-[16px] justify-items-center py-[20px] box-border"
@@ -654,15 +654,44 @@
         </div>
       </div>
       <!-- #endregion baner4-->
-        <!-- #region footer-->
+      <!-- #region footer-->
       <div class="footer w-full">
         <img src="./src/img/baner4/Footer.png" alt="" class="w-full" />
       </div>
       <!-- #endregion footer-->
-    
-
     </div>
     <!-- #endregion wrapper-->
     <script type="module" src="./src/js/main.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+     <script>
+      var swiper = new Swiper(".mySwiper-shoe", {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+     <script>
+      var swiper = new Swiper(".mySwiper-lala", {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
